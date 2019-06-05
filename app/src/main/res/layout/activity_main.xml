@@ -14,84 +14,110 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/logo" />
+        app:srcCompat="@drawable/logo" />
 
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
-
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Email">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:hint="Email" />
+            android:inputType="textEmailAddress"
+             />
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Password">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:hint="Password"
+            android:inputType="number"
+
             />
     </android.support.design.widget.TextInputLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/laranja"
         android:textSize="12dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_margin="16dp"
         android:textColorHint="@color/branco"
         android:hint="Login"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_weight="1"
-        android:textColor="@color/colorPrimary"
-        android:text="OR"
         android:gravity="center"
-        />
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/laranja"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/laranja"
+            android:text="Ou"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/laranja"
+            android:layout_margin="16dp"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorFacebook"
+        android:backgroundTint="@color/colorFacebook"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColorHint="@color/branco"
+        android:textColor="@color/branco"
         android:drawableLeft="@drawable/ic_facebook"
         android:paddingLeft="8dp"
-        android:textSize="12dp"
         android:textAlignment="center"
-        android:hint="Login with Facebook"/>
+        android:text="Login com Facebook"
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/laranja"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="32dp"
-        android:textSize="12dp"
-        android:textColorHint="@color/branco"
-        android:hint="Register Now"/>
+        android:textColor="@color/branco"
+        android:textAllCaps="false"
+        android:text="Registrar-se"/>
 
 
 
