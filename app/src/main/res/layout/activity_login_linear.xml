@@ -6,15 +6,22 @@
     android:layout_height="match_parent"
     android:background="@color/branco"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LoginLinearActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/logo" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        app:civ_border_color="@color/laranja"
+        app:civ_border_width="5dp"
+        />
 
 
     <android.support.design.widget.TextInputLayout
@@ -28,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
+            android:id="@+id/main_text_email_id"
              />
 
     </android.support.design.widget.TextInputLayout>
@@ -37,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:id="@+id/login_email_edit_text"
         android:hint="Password">
 
         <EditText
@@ -54,6 +63,7 @@
         android:textSize="12dp"
         android:layout_margin="16dp"
         android:textColorHint="@color/branco"
+        android:id="@+id/login_button"
         android:hint="Login"/>
 
     <LinearLayout
